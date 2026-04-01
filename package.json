@@ -6,21 +6,31 @@
     "tontine"
   ],
   "scripts": {
+    "build:stats": "npm -w tontine run build:stats",
     "build:tontine": "npm run generate-assets && npm -w tontine run build",
+    "check-types": "npm -w tontine run typecheck",
+    "dev-tontine": "npm -w tontine run dev",
+    "format": "biome format",
     "format-lint": "biome check",
     "format-lint:fix": "biome check --write",
     "generate-assets": "node tontine/scripts/generate-static-assets.mjs",
     "postbuild": "./tontine/scripts/remove-sourcemaps.sh",
     "run-tests": "./tontine/scripts/run-tests.sh",
-    "dev-tontine": "npm -w tontine run dev",
+    "setup": "npm install",
     "start-tontine": "npm -w tontine run start",
-    "check-types:tontine": "npm -w tontine run typecheck"
+    "tc-report:tontine": "npm -w tontine run tc-report"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.10",
     "@types/node": "24.12.0",
     "cross-env": "10.1.0",
+    "type-coverage": "^2.29.7",
     "typescript": "5.9.3"
+  },
+  "release": {
+    "branches": [
+      "production"
+    ]
   },
   "dependencies": {
     "@netlify/functions": "^5.1.5"

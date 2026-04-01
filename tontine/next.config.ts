@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next'
-import { localizedRedirects, devRedirects } from './redirects.config'
+import { devRedirects, localizedRedirects } from './redirects.config'
 
 const isDevContext =
   process.env.NEXT_PUBLIC_ENVIRONMENT_TYPE === 'development' ||

@@ -4,7 +4,7 @@
     "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": true,
-    "defaultBranch": "main"
+    "defaultBranch": "staging"
   },
   "files": {
     "ignoreUnknown": false,
@@ -17,25 +17,369 @@
       "trailingCommas": "es5",
       "semicolons": "asNeeded",
       "arrowParentheses": "always",
-      "bracketSameLine": false
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
     }
   },
   "formatter": {
     "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
     "indentStyle": "space",
     "indentWidth": 2,
-    "lineWidth": 100
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "bracketSpacing": true,
+    "includes": [
+      "**",
+      "!**/package.json",
+      "!**/out/**/*",
+      "!**/.netlify/**/*",
+      "!.vscode/**/*",
+      "!**/dist/**/*",
+      "!**/.next/**/*",
+      "!**/.sanity/**/*",
+      "!**/coverage/**/*",
+      "!**/coverage-ts/**/*",
+      "!**/node_modules/**/*",
+      "!**/public/**/*",
+      "!**/.cache/**/*",
+      "!**/.turbo/**/*",
+      "!**/.vercel/**/*",
+      "!**/*.d.ts"
+    ]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
+      "complexity": {
+        "noVoid": "error",
+        "noForEach": "off",
+        "noImportantStyles": "off"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "error",
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error",
+        "useExhaustiveDependencies": "warn",
+        "noReactPropAssignments": "error",
+        "useHookAtTopLevel": "error",
+        "noChildrenProp": "error"
+      },
       "style": {
-        "noDefaultExport": "warn"
+        "useNodejsImportProtocol": "off",
+        "noParameterAssign": "warn",
+        "useBlockStatements": "off",
+        "noDefaultExport": "error",
+        "noNamespace": "error",
+        "noParameterProperties": "error",
+        "noNestedTernary": "error",
+        "useSelfClosingElements": "error",
+        "useConsistentObjectDefinitions": "warn"
+      },
+      "suspicious": {
+        "noConsole": "warn",
+        "noEmptyBlockStatements": "error",
+        "noArrayIndexKey": "off",
+        "noUnknownAtRules": "off"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "fix": "safe",
+          "options": {
+            "attributes": [
+              "class",
+              "className",
+              "classList",
+              "ClassName",
+              "className",
+              "ngClass",
+              "className",
+              "ClassName",
+              "class",
+              "Styling",
+              "Style",
+              "Props",
+              "Elements",
+              "overrideElements"
+            ],
+            "functions": ["clsx", "cn", "tw"]
+          }
+        }
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useSemanticElements": "off"
+      }
+    },
+    "includes": [
+      "**",
+      "!**/node_modules/**/*",
+      "!**/out/**/*",
+      "!**/public/**/*",
+      "!**/.cache/**/*",
+      "!**/.turbo/**/*",
+      "!**/.vercel/**/*",
+      "!**/.next/**/*",
+      "!**/.netlify/**/*",
+      "!**/.sanity/**/*",
+      "!**/coverage/**/*",
+      "!**/dist/**/*",
+      "!**/coverage-ts/**/*",
+      "!**/*.d.ts",
+      "!.vscode/**/*"
+    ]
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.ts", "**/*.tsx"],
+      "javascript": {
+        "globals": ["Cookiebot", "NodeJS", "React"]
+      },
+      "linter": {
+        "rules": {
+          "style": {
+            "useConsistentArrayType": {
+              "level": "error",
+              "options": {
+                "syntax": "generic"
+              }
+            },
+            "useImportType": "error",
+            "useNamingConvention": {
+              "level": "error",
+              "options": {
+                "strictCase": false,
+                "conventions": [
+                  {
+                    "selector": {
+                      "kind": "const",
+                      "scope": "global"
+                    },
+                    "formats": ["CONSTANT_CASE", "camelCase", "PascalCase"]
+                  },
+                  {
+                    "selector": {
+                      "kind": "objectLiteralMember"
+                    },
+                    "match": "_?_?(.+)"
+                  },
+                  {
+                    "selector": {
+                      "kind": "objectLiteralMember"
+                    },
+                    "match": "_?(.+)"
+                  },
+                  {
+                    "selector": {
+                      "kind": "objectLiteralMember",
+                      "scope": "any"
+                    },
+                    "formats": [
+                      "CONSTANT_CASE",
+                      "camelCase",
+                      "PascalCase",
+                      "snake_case"
+                    ]
+                  },
+                  {
+                    "selector": {
+                      "kind": "variable",
+                      "scope": "global"
+                    },
+                    "formats": ["camelCase"]
+                  },
+                  {
+                    "selector": {
+                      "kind": "typeLike",
+                      "scope": "global"
+                    },
+                    "formats": ["PascalCase"]
+                  },
+                  {
+                    "selector": {
+                      "kind": "enumMember",
+                      "scope": "any"
+                    },
+                    "formats": ["PascalCase", "snake_case", "camelCase"]
+                  },
+                  {
+                    "selector": {
+                      "kind": "enum",
+                      "scope": "global"
+                    },
+                    "formats": ["PascalCase", "snake_case", "camelCase"]
+                  },
+                  {
+                    "selector": {
+                      "kind": "typeProperty"
+                    },
+                    "match": "_?(.+)"
+                  },
+                  {
+                    "selector": {
+                      "kind": "typeProperty",
+                      "scope": "any"
+                    },
+                    "formats": ["PascalCase", "snake_case", "camelCase"]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.tsx", "**/*.jsx"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "useExhaustiveDependencies": "warn",
+            "useHookAtTopLevel": "error",
+            "useUniqueElementIds": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": [
+        "sanity-studio/schemas/**/*",
+        "!sanity-studio/schemas/common/**/*",
+        "!sanity-studio/schemas/util-functions/**/*"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNamingConvention": {
+              "level": "error",
+              "options": {
+                "strictCase": false,
+                "conventions": [
+                  {
+                    "selector": {
+                      "kind": "const",
+                      "scope": "global"
+                    },
+                    "formats": ["PascalCase"]
+                  },
+                  {
+                    "selector": {
+                      "kind": "function",
+                      "scope": "global"
+                    },
+                    "formats": ["PascalCase"]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["sanity-studio/components/**/*.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNamingConvention": {
+              "level": "error",
+              "options": {
+                "strictCase": false,
+                "conventions": [
+                  {
+                    "selector": {
+                      "kind": "function",
+                      "scope": "global"
+                    },
+                    "formats": ["PascalCase"]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["sanity-studio/styles/**/*.css"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDescendingSpecificity": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["sanity-studio/**/*.tsx"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "recommended": false
+          }
+        }
+      }
+    },
+    {
+      "includes": ["tontine/styles/**/*.css"],
+      "css": {
+        "parser": {
+          "tailwindDirectives": true
+        }
+      }
+    },
+    {
+      "includes": ["cypress/**/*"],
+      "javascript": {
+        "globals": [
+          "JQuery",
+          "cy",
+          "Cypress",
+          "expect",
+          "describe",
+          "it",
+          "mount",
+          "context",
+          "wrap"
+        ]
+      }
+    },
+    {
+      "includes": [
+        "cypress/cypress.config.ts",
+        "tontine/app/**/*",
+        "tontine/postcss.config.mjs",
+        "sanity-studio/sanity.cli.ts",
+        "sanity-studio/sanity.config.ts",
+        "sanity-studio/migrations/**/*",
+        "tontine/functions/**/*",
+        "tontine/scripts/**/*"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
       }
     }
-  },
-  "organizeImports": {
-    "enabled": true
-  }
+  ]
 }

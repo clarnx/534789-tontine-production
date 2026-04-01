@@ -20,7 +20,7 @@ export function generateStaticParams() {
 export default async function SlugPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string[] }>
+  params: Promise<{ locale: string; slug: Array<string> }>
 }) {
   const { locale, slug } = await params
   const pageSlug = slug.join('/')
