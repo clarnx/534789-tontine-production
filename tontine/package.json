@@ -1,0 +1,30 @@
+{
+  "name": "tontine",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cross-env BUILD_ENV=true next build",
+    "build:tontine": "npm --prefix .. run build:tontine",
+    "dev": "next dev -p 3000",
+    "format-lint": "npm --prefix .. run format-lint",
+    "format-lint:fix": "npm --prefix .. run format-lint:fix",
+    "generate-assets": "npm --prefix .. run generate-assets",
+    "postbuild": "npm --prefix .. run postbuild",
+    "run-tests": "npm --prefix .. run run-tests",
+    "start": "next start -p 3000",
+    "typecheck": "tsc --noEmit --pretty"
+  },
+  "dependencies": {
+    "cross-env": "10.1.0",
+    "next": "15.2.4",
+    "next-i18n-router": "^5.5.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/node": "24.12.0",
+    "typescript": "5.9.3"
+  }
+}
