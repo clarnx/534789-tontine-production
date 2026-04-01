@@ -2,11 +2,6 @@
 
 set -euo pipefail
 
-# When base = "/tontine", this script is called from the repo root via:
-#   npm --prefix .. run postbuild  (from tontine/package.json)
-# which resolves back to the root package.json postbuild:
-#   ./tontine/scripts/remove-sourcemaps.sh
-# So DIRECTORY must be relative to the repo root.
 DIRECTORY="tontine/.next"
 
 handle_error() {

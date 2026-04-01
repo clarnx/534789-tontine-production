@@ -1,0 +1,629 @@
+Timestamp: 2026-04-01T17:04:29.839Z
+Type: error
+Category: exception
+Level: error
+Data: {"type":"Error","value":"ENOENT: no such file or directory, mkdir '/var/task/tontine/.next/cache'"}
+
+Timestamp: 2026-04-01T17:04:29.831Z
+Type: debug
+Category: console
+Level: error
+Message: Error: ENOENT: no such file or directory, mkdir '/var/task/tontine/.next/cache'
+Data: {"arguments":[{"code":"ENOENT","errno":-2,"message":"ENOENT: no such file or directory, mkdir '/var/task/tontine/.next/cache'","name":"Error","path":"/var/task/tontine/.next/cache","stack":"Error: ENOENT: no such file or directory, mkdir '/var/task/tontine/.next/cache'\n    at async Object.mkdir (node:internal/fs/promises:856:10)\n    at async /var/task/node_modules/next/dist/server/lib/disk-lru-cache.external.js:36:17","syscall":"mkdir"}],"logger":"console"}
+
+Timestamp: 2026-04-01T17:04:03.545Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"e2b12356-d968-444e-ba28-30e81bb31866","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2Mzk0MywiaWF0IjoxNzc1MDYzMDQzLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.L1yQki8oxbJU5Cbpw_RMih9ehsAmBbVxy4n_D0uxBXk","method":"GET","nf_req_id":"01KN501324B2RFHPARK67ZE20V","ts":1775063043545,"path":"/_next/image/","span_id":"e62718fc9441b337","req_start_at":"1775063043485596002"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"e2b12356-d968-444e-ba28-30e81bb31866\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2Mzk0MywiaWF0IjoxNzc1MDYzMDQzLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.L1yQki8oxbJU5Cbpw_RMih9ehsAmBbVxy4n_D0uxBXk\",\"method\":\"GET\",\"nf_req_id\":\"01KN501324B2RFHPARK67ZE20V\",\"ts\":1775063043545,\"path\":\"/_next/image/\",\"span_id\":\"e62718fc9441b337\",\"req_start_at\":\"1775063043485596002\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:32.262Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/f1bd8e53-6b17-4830-bb04-95b8fabe6d04/response"}
+
+Timestamp: 2026-04-01T17:03:32.243Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"f1bd8e53-6b17-4830-bb04-95b8fabe6d04","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"f1bd8e53-6b17-4830-bb04-95b8fabe6d04\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:32.242Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:32.241Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:32.241Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:32.241Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvdG9udGluZS10cnVzdC1mdW5k"}
+
+Timestamp: 2026-04-01T17:03:32.240Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:32.180Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL3RvbnRpbmUtdHJ1c3QtZnVuZA"}
+
+Timestamp: 2026-04-01T17:03:32.122Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"f1bd8e53-6b17-4830-bb04-95b8fabe6d04","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMiwiaWF0IjoxNzc1MDYzMDEyLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AW1zP656JFRsnxtdJHlueA86NAWXWtEvXZbDnDCr-FU","method":"GET","nf_req_id":"01KN5004PB07WH3W5AKW2KGGD3","ts":1775063012122,"path":"/es/tontine-trust-fund/","span_id":"c2a1be574a3045d5","req_start_at":"1775063012098216988"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"f1bd8e53-6b17-4830-bb04-95b8fabe6d04\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMiwiaWF0IjoxNzc1MDYzMDEyLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AW1zP656JFRsnxtdJHlueA86NAWXWtEvXZbDnDCr-FU\",\"method\":\"GET\",\"nf_req_id\":\"01KN5004PB07WH3W5AKW2KGGD3\",\"ts\":1775063012122,\"path\":\"/es/tontine-trust-fund/\",\"span_id\":\"c2a1be574a3045d5\",\"req_start_at\":\"1775063012098216988\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:31.957Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/93a0881b-d5cb-4996-9f19-d74a38f33666/response"}
+
+Timestamp: 2026-04-01T17:03:31.956Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"93a0881b-d5cb-4996-9f19-d74a38f33666","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"93a0881b-d5cb-4996-9f19-d74a38f33666\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:31.954Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:31.946Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:31.945Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvdG9udGluZS10cnVzdC1mdW5k"}
+
+Timestamp: 2026-04-01T17:03:31.945Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:31.943Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:31.926Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL3RvbnRpbmUtdHJ1c3QtZnVuZA"}
+
+Timestamp: 2026-04-01T17:03:31.863Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"93a0881b-d5cb-4996-9f19-d74a38f33666","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMSwiaWF0IjoxNzc1MDYzMDExLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.Oc9Oj-CiR5tmKqX4i-NCZcpbM9PLKWcYcrV1DU2bPGU","method":"GET","nf_req_id":"01KN5004E0AQ6CHFX40WCFJ8KF","ts":1775063011863,"path":"/es/tontine-trust-fund/","span_id":"dcb7a73fec56d346","req_start_at":"1775063011831632869"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"93a0881b-d5cb-4996-9f19-d74a38f33666\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMSwiaWF0IjoxNzc1MDYzMDExLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.Oc9Oj-CiR5tmKqX4i-NCZcpbM9PLKWcYcrV1DU2bPGU\",\"method\":\"GET\",\"nf_req_id\":\"01KN5004E0AQ6CHFX40WCFJ8KF\",\"ts\":1775063011863,\"path\":\"/es/tontine-trust-fund/\",\"span_id\":\"dcb7a73fec56d346\",\"req_start_at\":\"1775063011831632869\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:31.023Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/2d9746eb-79ab-4e74-bd90-acf310bc683d/response"}
+
+Timestamp: 2026-04-01T17:03:31.021Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"2d9746eb-79ab-4e74-bd90-acf310bc683d","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"2d9746eb-79ab-4e74-bd90-acf310bc683d\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:31.019Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:30.915Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.915Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:30.914Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.913Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvdHJ1c3QtcHJvcGVydHk"}
+
+Timestamp: 2026-04-01T17:03:30.894Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL3RydXN0LXByb3BlcnR5"}
+
+Timestamp: 2026-04-01T17:03:30.835Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"2d9746eb-79ab-4e74-bd90-acf310bc683d","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY","method":"GET","nf_req_id":"01KN5003DFWTEDA14A9TVXK17J","ts":1775063010835,"path":"/es/trust-property/","span_id":"910af0475d03ab4b","req_start_at":"1775063010792644249"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"2d9746eb-79ab-4e74-bd90-acf310bc683d\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY\",\"method\":\"GET\",\"nf_req_id\":\"01KN5003DFWTEDA14A9TVXK17J\",\"ts\":1775063010835,\"path\":\"/es/trust-property/\",\"span_id\":\"910af0475d03ab4b\",\"req_start_at\":\"1775063010792644249\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:30.703Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/700a82bb-b987-4187-aead-ebf896348579/response"}
+
+Timestamp: 2026-04-01T17:03:30.701Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"700a82bb-b987-4187-aead-ebf896348579","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"700a82bb-b987-4187-aead-ebf896348579\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:30.699Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:30.687Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvd2hhdC1pcy1hLXRvbnRpbmVpcmE"}
+
+Timestamp: 2026-04-01T17:03:30.686Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:30.684Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.681Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.667Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL3doYXQtaXMtYS10b250aW5laXJh"}
+
+Timestamp: 2026-04-01T17:03:30.603Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"700a82bb-b987-4187-aead-ebf896348579","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY","method":"GET","nf_req_id":"01KN50036QP49NY21BZQXJKJP5","ts":1775063010603,"path":"/es/what-is-a-tontineira/","span_id":"f2d600974935e673","req_start_at":"1775063010577004983"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"700a82bb-b987-4187-aead-ebf896348579\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY\",\"method\":\"GET\",\"nf_req_id\":\"01KN50036QP49NY21BZQXJKJP5\",\"ts\":1775063010603,\"path\":\"/es/what-is-a-tontineira/\",\"span_id\":\"f2d600974935e673\",\"req_start_at\":\"1775063010577004983\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:30.553Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/ea13e53e-0070-41c2-933e-6118f2fca4d2/response"}
+
+Timestamp: 2026-04-01T17:03:30.552Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"ea13e53e-0070-41c2-933e-6118f2fca4d2","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"ea13e53e-0070-41c2-933e-6118f2fca4d2\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:30.550Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.529Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:30.517Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:30.514Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvbGlmZXRpbWUtaW5jb21lLWNhbGN1bGF0b3I"}
+
+Timestamp: 2026-04-01T17:03:30.513Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.494Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL2xpZmV0aW1lLWluY29tZS1jYWxjdWxhdG9y"}
+
+Timestamp: 2026-04-01T17:03:30.463Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"ea13e53e-0070-41c2-933e-6118f2fca4d2","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY","method":"GET","nf_req_id":"01KN500328SG8GCS7ETDH9JM0H","ts":1775063010463,"path":"/es/lifetime-income-calculator/","span_id":"8c11872d384859e0","req_start_at":"1775063010436342307"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"ea13e53e-0070-41c2-933e-6118f2fca4d2\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY\",\"method\":\"GET\",\"nf_req_id\":\"01KN500328SG8GCS7ETDH9JM0H\",\"ts\":1775063010463,\"path\":\"/es/lifetime-income-calculator/\",\"span_id\":\"8c11872d384859e0\",\"req_start_at\":\"1775063010436342307\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:30.442Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/69acb788-7765-42b2-90e0-942162a7d50c/response"}
+
+Timestamp: 2026-04-01T17:03:30.440Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"69acb788-7765-42b2-90e0-942162a7d50c","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"69acb788-7765-42b2-90e0-942162a7d50c\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:30.438Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvbmF0aW9uYWwtdG9udGluZXM"}
+
+Timestamp: 2026-04-01T17:03:30.427Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:30.401Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:30.398Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.397Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:30.382Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL25hdGlvbmFsLXRvbnRpbmVz"}
+
+Timestamp: 2026-04-01T17:03:30.157Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"69acb788-7765-42b2-90e0-942162a7d50c","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY","method":"GET","nf_req_id":"01KN5002RMNYDEKYHW8ZP481CQ","ts":1775063010157,"path":"/es/national-tontines/","span_id":"fd8f5b7941f7626e","req_start_at":"1775063010132456009"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"69acb788-7765-42b2-90e0-942162a7d50c\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkxMCwiaWF0IjoxNzc1MDYzMDEwLCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.SRPRJ3Fd041sdffg0T8pVVaoCIItY0okUTId6Xhj_SY\",\"method\":\"GET\",\"nf_req_id\":\"01KN5002RMNYDEKYHW8ZP481CQ\",\"ts\":1775063010157,\"path\":\"/es/national-tontines/\",\"span_id\":\"fd8f5b7941f7626e\",\"req_start_at\":\"1775063010132456009\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:29.852Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/ed11eea8-f8b6-4a8a-8696-ce38c2567226/response"}
+
+Timestamp: 2026-04-01T17:03:29.850Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"ed11eea8-f8b6-4a8a-8696-ce38c2567226","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"ed11eea8-f8b6-4a8a-8696-ce38c2567226\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:29.849Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:29.822Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvZmFxcw"}
+
+Timestamp: 2026-04-01T17:03:29.821Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:29.820Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:29.818Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:29.769Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":200,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL2ZhcXM"}
+
+Timestamp: 2026-04-01T17:03:29.736Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"ed11eea8-f8b6-4a8a-8696-ce38c2567226","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOSwiaWF0IjoxNzc1MDYzMDA5LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AWCuWo9ShIgEp34yEYpd9MnRHmE2uyM2PLWTS4jRFnA","method":"GET","nf_req_id":"01KN5002BERBMM9P9JNMRAH70E","ts":1775063009736,"path":"/es/faqs/","span_id":"f25ff49888bf78c5","req_start_at":"1775063009706389816"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"ed11eea8-f8b6-4a8a-8696-ce38c2567226\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOSwiaWF0IjoxNzc1MDYzMDA5LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AWCuWo9ShIgEp34yEYpd9MnRHmE2uyM2PLWTS4jRFnA\",\"method\":\"GET\",\"nf_req_id\":\"01KN5002BERBMM9P9JNMRAH70E\",\"ts\":1775063009736,\"path\":\"/es/faqs/\",\"span_id\":\"f25ff49888bf78c5\",\"req_start_at\":\"1775063009706389816\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:29.467Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/17e79763-351c-4930-b716-926269b0a5e3/response"}
+
+Timestamp: 2026-04-01T17:03:29.465Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"17e79763-351c-4930-b716-926269b0a5e3","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"17e79763-351c-4930-b716-926269b0a5e3\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:29.463Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:29.462Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvc2ltcGxpY2l0eS10cmFuc3BhcmVuY3k"}
+
+Timestamp: 2026-04-01T17:03:29.461Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:29.457Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:29.456Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:29.441Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL3NpbXBsaWNpdHktdHJhbnNwYXJlbmN5"}
+
+Timestamp: 2026-04-01T17:03:29.407Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"17e79763-351c-4930-b716-926269b0a5e3","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOSwiaWF0IjoxNzc1MDYzMDA5LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AWCuWo9ShIgEp34yEYpd9MnRHmE2uyM2PLWTS4jRFnA","method":"GET","nf_req_id":"01KN50021576FVXR8VNY71SVRX","ts":1775063009407,"path":"/es/simplicity-transparency/","span_id":"3e2a3e9e822159be","req_start_at":"1775063009374379741"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"17e79763-351c-4930-b716-926269b0a5e3\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOSwiaWF0IjoxNzc1MDYzMDA5LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AWCuWo9ShIgEp34yEYpd9MnRHmE2uyM2PLWTS4jRFnA\",\"method\":\"GET\",\"nf_req_id\":\"01KN50021576FVXR8VNY71SVRX\",\"ts\":1775063009407,\"path\":\"/es/simplicity-transparency/\",\"span_id\":\"3e2a3e9e822159be\",\"req_start_at\":\"1775063009374379741\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:29.319Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/b65d8a49-d600-49c6-a933-d46f61a7f97f/response"}
+
+Timestamp: 2026-04-01T17:03:29.317Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"b65d8a49-d600-49c6-a933-d46f61a7f97f","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"b65d8a49-d600-49c6-a933-d46f61a7f97f\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:29.316Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:29.314Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:29.309Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:29.304Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:29.301Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvc2ltcGxpY2l0eS10cmFuc3BhcmVuY3k"}
+
+Timestamp: 2026-04-01T17:03:29.283Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL3NpbXBsaWNpdHktdHJhbnNwYXJlbmN5"}
+
+Timestamp: 2026-04-01T17:03:29.153Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"b65d8a49-d600-49c6-a933-d46f61a7f97f","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOSwiaWF0IjoxNzc1MDYzMDA5LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AWCuWo9ShIgEp34yEYpd9MnRHmE2uyM2PLWTS4jRFnA","method":"GET","nf_req_id":"01KN5001RSY53M7WZXH5YK7M7W","ts":1775063009153,"path":"/es/simplicity-transparency/","span_id":"280a3fb58a98cde7","req_start_at":"1775063009117434965"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"b65d8a49-d600-49c6-a933-d46f61a7f97f\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOSwiaWF0IjoxNzc1MDYzMDA5LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.AWCuWo9ShIgEp34yEYpd9MnRHmE2uyM2PLWTS4jRFnA\",\"method\":\"GET\",\"nf_req_id\":\"01KN5001RSY53M7WZXH5YK7M7W\",\"ts\":1775063009153,\"path\":\"/es/simplicity-transparency/\",\"span_id\":\"280a3fb58a98cde7\",\"req_start_at\":\"1775063009117434965\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:28.714Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/94830716-072c-4334-8d30-7445111fc5f8/response"}
+
+Timestamp: 2026-04-01T17:03:28.712Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"94830716-072c-4334-8d30-7445111fc5f8","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"94830716-072c-4334-8d30-7445111fc5f8\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:28.711Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:28.622Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:28.614Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvYXdhcmRz"}
+
+Timestamp: 2026-04-01T17:03:28.612Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:28.605Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:28.589Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":304,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL2F3YXJkcw"}
+
+Timestamp: 2026-04-01T17:03:28.504Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"94830716-072c-4334-8d30-7445111fc5f8","aid":"59ef0d3b0b79b7456a72c979","branch":"production-tontine","account_tier":"","did":"69cd3deabc01470ef92df571","fn":"___netlify-server-handler","host":"tontine.com","log_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOCwiaWF0IjoxNzc1MDYzMDA4LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.utO_6Qr5i3Y3Qs5YSINMS7WGExCdf_4SYzRMLKBM5Gc","method":"GET","nf_req_id":"01KN5001446CRC5Z0TRFWHP9DG","ts":1775063008504,"path":"/es/awards/","span_id":"147a486652f7792c","req_start_at":"1775063008470787476"},"type":"bootstrap/request"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"94830716-072c-4334-8d30-7445111fc5f8\",\"aid\":\"59ef0d3b0b79b7456a72c979\",\"branch\":\"production-tontine\",\"account_tier\":\"\",\"did\":\"69cd3deabc01470ef92df571\",\"fn\":\"___netlify-server-handler\",\"host\":\"tontine.com\",\"log_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCIsImV4cCI6MTc3NTA2MzkwOCwiaWF0IjoxNzc1MDYzMDA4LCJhY2NvdW50X2lkIjoiNTllZjBkM2IwYjc5Yjc0NTZhNzJjOTc5IiwiZnVuY3Rpb25faWQiOiIwMjFlYWZkM2JjZjQ4Y2YxNWY1ZjFlODZkZTlmM2IxOTU3MTZhYTc0MjY4ZjU4NjNhYjJiYmJlMDE2NGVlMmVkIiwic2l0ZV9pZCI6ImYwNTY3ZWFjLWM1M2ItNGE4YS04OWEyLWJmYWQ4OGJiMjllOSJ9.utO_6Qr5i3Y3Qs5YSINMS7WGExCdf_4SYzRMLKBM5Gc\",\"method\":\"GET\",\"nf_req_id\":\"01KN5001446CRC5Z0TRFWHP9DG\",\"ts\":1775063008504,\"path\":\"/es/awards/\",\"span_id\":\"147a486652f7792c\",\"req_start_at\":\"1775063008470787476\"},\"type\":\"bootstrap/request\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:28.462Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"POST","status_code":202,"url":"http://169.254.100.1:9001/2018-06-01/runtime/invocation/53c5d2d3-e71f-4aa0-a07a-99614e0289e0/response"}
+
+Timestamp: 2026-04-01T17:03:28.461Z
+Type: debug
+Category: console
+Level: info
+Message: __nfSystemLog {"fields":{"aws_req_id":"53c5d2d3-e71f-4aa0-a07a-99614e0289e0","status":200},"type":"bootstrap/response"}
+Data: {"arguments":["__nfSystemLog","{\"fields\":{\"aws_req_id\":\"53c5d2d3-e71f-4aa0-a07a-99614e0289e0\",\"status\":200},\"type\":\"bootstrap/response\"}"],"logger":"console"}
+
+Timestamp: 2026-04-01T17:03:28.459Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:28.439Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL2xheW91dA"}
+
+Timestamp: 2026-04-01T17:03:28.434Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vW2xvY2FsZV0vWy4uLnNsdWddL3BhZ2U"}
+
+Timestamp: 2026-04-01T17:03:28.419Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vZXMvYXdhcmRz"}
+
+Timestamp: 2026-04-01T17:03:28.415Z
+Type: http
+Category: http
+Level: warning
+Data: {"http.method":"GET","status_code":404,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/X05fVF8vbGF5b3V0"}
+
+Timestamp: 2026-04-01T17:03:28.374Z
+Type: http
+Category: http
+Level: info
+Data: {"http.method":"GET","status_code":200,"url":"https://edge-uncached.netlifyblobs.com/region:us-east-1/f0567eac-c53b-4a8a-89a2-bfad88bb29e9/deploy:69cd3deabc01470ef92df571/L2VzL2F3YXJkcw"}
+
