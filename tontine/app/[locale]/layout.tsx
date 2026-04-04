@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import i18nConfig from '@/i18nConfig'
 
+// In the full app this layout also wires up providers, fonts, and other app-
+// level concerns. And it makes a sanity query.
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }))
 }

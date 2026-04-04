@@ -1,32 +1,38 @@
-[[plugins]]
-package = "@netlify/plugin-lighthouse"
-  [plugins.inputs.settings]
-  preset = "desktop"
+## REDIRECTS
 
-[functions]
-directory = "functions"
+# Keep FAQ URLs normalized across localized routes
+[[redirects]]
+from = ":locale/FAQs"
+to = ":locale/faqs/"
+force = true
+
+[[redirects]]
+from = ":locale/FAQs/"
+to = ":locale/faqs/"
+force = true
 
 ## Build settings
 
 # Only run build on non-sanity branches
 [build]
-ignore = "node tontine/scripts/ignore_builds.js"
+ignore = "node ignore_builds.js"
 
 [context.deploy-preview]
-base = "/tontine"
-command = "npm run format-lint:fix && npm run build:tontine && npm run run-tests"
-publish = ".next"
+base = "."
+command = "npm run format-lint:fix && npm run build:tontine && npm run tc-report:tontine && npm run run-tests"
+publish = "tontine/.next"
 
 [context.staging]
-base = "/tontine"
-command = "npm run format-lint:fix && npm run build:tontine && npm run run-tests"
-publish = ".next"
+base = "."
+command = "npm run format-lint:fix && npm run build:tontine && npm run tc-report:tontine && npm run run-tests"
+publish = "tontine/.next"
 
-[context.production]
-base = "/tontine"
+[context.production-tontine]
+base = "."
 command = "npm run format-lint && npm run build:tontine && npm run postbuild"
-publish = ".next"
+publish = "tontine/.next"
 
-# Daily rebuild function
-[context.production.functions."daily-rebuild"]
-schedule = "30 12 * * *"
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+  [plugins.inputs.settings]
+  preset = "desktop"

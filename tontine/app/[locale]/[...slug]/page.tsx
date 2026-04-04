@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation'
 
+// In the main app, this catch-all route resolves CMS-backed slugs and renders a
+// much larger section tree
 const pages: Record<string, { title: string; body: string }> = {
   about: {
     title: 'About',
@@ -10,6 +12,8 @@ const pages: Record<string, { title: string; body: string }> = {
     body: 'This is the contact page.',
   },
 }
+
+export const dynamicParams = false
 
 export function generateStaticParams() {
   return Object.keys(pages).flatMap((slug) =>

@@ -1,3 +1,5 @@
+export const dynamicParams = false
+
 export default function NotFound() {
   return (
     <main>

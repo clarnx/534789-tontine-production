@@ -1,3 +1,5 @@
+export const dynamicParams = false
+
 const pages = [
   {
     slug: 'home',
