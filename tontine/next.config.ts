@@ -1,15 +1,13 @@
 import type { NextConfig } from 'next'
 import { devRedirects, localizedRedirects } from './redirects.config'
 
-const isDevContext =
-  process.env.NEXT_PUBLIC_ENVIRONMENT_TYPE === 'development' ||
-  !process.env.NEXT_PUBLIC_ENVIRONMENT_TYPE
+const isNetlify = Boolean(process.env.NETLIFY)
 
 // This repro keeps only the routing-related config that affects the behavior, sentry excluded
 const nextConfig = {
   async redirects() {
     // Netlify needs localized redirects or it will 404
-    return isDevContext ? devRedirects : localizedRedirects
+    return isNetlify ? localizedRedirects : devRedirects
   },
   poweredByHeader: false,
   trailingSlash: true,
