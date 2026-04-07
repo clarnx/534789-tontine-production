@@ -40,7 +40,6 @@
     "bracketSpacing": true,
     "includes": [
       "**",
-      "!**/package.json",
       "!**/out/**/*",
       "!**/.netlify/**/*",
       "!.vscode/**/*",
@@ -57,13 +56,7 @@
       "!**/*.d.ts"
     ]
   },
-  "assist": {
-    "actions": {
-      "source": {
-        "organizeImports": "on"
-      }
-    }
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
@@ -147,6 +140,7 @@
       "!.vscode/**/*"
     ]
   },
+
   "overrides": [
     {
       "includes": ["**/*.ts", "**/*.tsx"],
@@ -259,6 +253,7 @@
         }
       }
     },
+
     {
       "includes": [
         "sanity-studio/schemas/**/*",
@@ -294,6 +289,7 @@
         }
       }
     },
+
     {
       "includes": ["sanity-studio/components/**/*.tsx"],
       "linter": {
@@ -318,6 +314,7 @@
         }
       }
     },
+
     {
       "includes": ["sanity-studio/styles/**/*.css"],
       "linter": {
@@ -328,6 +325,7 @@
         }
       }
     },
+
     {
       "includes": ["sanity-studio/**/*.tsx"],
       "linter": {
@@ -338,6 +336,7 @@
         }
       }
     },
+
     {
       "includes": ["tontine/styles/**/*.css"],
       "css": {
@@ -346,6 +345,7 @@
         }
       }
     },
+
     {
       "includes": ["cypress/**/*"],
       "javascript": {
@@ -370,7 +370,6 @@
         "sanity-studio/sanity.cli.ts",
         "sanity-studio/sanity.config.ts",
         "sanity-studio/migrations/**/*",
-        "tontine/functions/**/*",
         "tontine/scripts/**/*"
       ],
       "linter": {
@@ -379,6 +378,22 @@
             "noDefaultExport": "off"
           }
         }
+      }
+    },
+    {
+      "includes": ["netlify/functions/**/*"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noConsole": "off"
+          },
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      },
+      "javascript": {
+        "globals": ["Netlify"]
       }
     }
   ]

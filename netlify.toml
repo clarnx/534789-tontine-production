@@ -1,6 +1,6 @@
 ## REDIRECTS
 
-# Keep FAQ URLs normalized across localized routes
+# Need these because netlify considers these as different paths
 [[redirects]]
 from = ":locale/FAQs"
 to = ":locale/faqs/"
@@ -31,6 +31,26 @@ publish = "tontine/.next"
 base = "."
 command = "npm run format-lint && npm run build:tontine && npm run postbuild"
 publish = "tontine/.next"
+
+### Scheduled functions
+
+[functions]
+directory = "netlify/functions"
+
+[context.production-tontine.functions."daily-rebuild"]
+schedule = "30 12 * * *"
+
+[context.production-tontine.functions."test-scheduled-function"]
+schedule = "@hourly"
+
+## Plugins
+
+[[context.production-tontine.plugins]]
+package = "@sentry/netlify-build-plugin"
+  [context.production-tontine.plugins.inputs]
+  sentryOrg = "tontine"
+  sentryProject = "javascript-nextjs"
+  deployPreviews = false
 
 [[plugins]]
 package = "@netlify/plugin-lighthouse"

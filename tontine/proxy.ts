@@ -6,13 +6,13 @@ import i18nConfig from './i18nConfig'
 // middleware. The repro keeps only the `_next/image` protection and i18n flow.
 export function proxy(request: NextRequest) {
   const isNextImageRequest = request.nextUrl.pathname === '/_next/image/'
-
   if (isNextImageRequest) {
     const imageUrl = request.nextUrl.searchParams.get('url')
     const width = request.nextUrl.searchParams.get('w')
     const quality = request.nextUrl.searchParams.get('q')
+    const hasRequiredImageParams = Boolean(imageUrl && width && quality)
 
-    if (!(imageUrl && width && quality)) {
+    if (!hasRequiredImageParams) {
       return NextResponse.redirect(new URL('/', request.url))
     }
 
@@ -37,15 +37,17 @@ export const config = {
       missing: [{ type: 'query', key: 'q' }],
     },
     /*
-     * Match all request paths except for:
-     * - api routes
-     * - Next.js static/image assets
-     * - known public text/image/pdf assets
-     * - metadata routes (sitemap / manifest / feed)
+     * Match all request paths except for the ones starting with:
+     * - // (double-slash paths)
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files) except when missing required query parameters
+     * - any route ending in a file extension (.png, .pdf, .etc, ...)
+     * - metadata routes (sitemap/feed/manifest), with or without extensions
      */
     {
       source:
-        '/((?!api|_next/static|_next/image|favicon\\.ico|robots\\.txt|llms\\.txt|llms-full\\.txt|ai\\.txt|sitemap(?:\\.xml)?|manifest(?:\\.webmanifest|\\.json)?|feed(?:\\.xml)?|.*\\.(?:png|svg|gif|pdf)).*)',
+        '/((?!/|api|_next/static|_next/image|sitemap(?:\\.xml)?|manifest(?:\\.webmanifest|\\.json)?|feed(?:\\.xml)?|.*\\.[^/]+$).*)',
       missing: [
         { type: 'header', key: 'next-router-prefetch' },
         { type: 'header', key: 'purpose', value: 'prefetch' },

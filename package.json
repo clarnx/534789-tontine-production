@@ -20,9 +20,6 @@
     "start-tontine": "npm -w tontine run start",
     "tc-report:tontine": "npm -w tontine run tc-report"
   },
-  "dependencies": {
-    "@netlify/functions": "^5.1.5"
-  },
   "devDependencies": {
     "@biomejs/biome": "^2.4.10",
     "@types/node": "24.12.2",
