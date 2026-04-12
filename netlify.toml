@@ -37,11 +37,19 @@ publish = "tontine/.next"
 [functions]
 directory = "netlify/functions"
 
-[context.production-tontine.functions."daily-rebuild"]
+[functions."daily-rebuild"]
 schedule = "30 12 * * *"
 
-[context.production-tontine.functions."test-scheduled-function"]
+[functions."test-scheduled-function"]
 schedule = "@hourly"
+
+# TEST: root-level schedule (expected to work)
+[functions."test-root-schedule"]
+schedule = "* * * * *"
+
+# TEST: context-level schedule (expected to NOT work)
+[context.production-tontine.functions."test-context-schedule"]
+schedule = "* * * * *"
 
 ## Plugins
 
